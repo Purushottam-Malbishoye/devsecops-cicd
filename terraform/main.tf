@@ -1,10 +1,10 @@
-# devops-demo/terraform/main.tf
+# devsecops/terraform/main.tf (only to demonstrate tfsec scans)
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "demo" {
-  bucket = "tfsec-demo-${random_id.suffix.hex}"
+resource "aws_s3_bucket" "devsecops" {
+  bucket = "tfsec-devsecops-${random_id.suffix.hex}"
   force_destroy = true
 }
 
