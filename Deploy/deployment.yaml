@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: devsecops
-        image: purushottammalbishoye/devsecops-cicd:v1
+        image: purushottammalbishoye/devsecops-cicd:v20250726131313
         ports:
         - containerPort: 80
