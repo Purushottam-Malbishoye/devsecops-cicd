@@ -76,9 +76,9 @@ jobs:
     # UPdate the K8s Manifest Files
     - name: Update K8s Manifests
       run: |
-        cat deploy/deployment.yaml
-        sed -i "s|image: purushottammalbishoye/devsecops-cicd:.*|image: purushottammalbishoye/devsecops-cicd:${{ env.VERSION }}|g" deploy/deployment.yaml
-        cat deploy/deployment.yaml
+        cat Deploy/deployment.yaml
+        sed -i "s|image: purushottammalbishoye/devsecops-cicd:.*|image: purushottammalbishoye/devsecops-cicd:${{ env.VERSION }}|g" Deploy/deployment.yaml
+        cat Deploy/deployment.yaml
 
     # Update Github
     - name: Commit the changes
